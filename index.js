@@ -137,10 +137,10 @@ class Drums {
   }
   tempoUpdate(e) {
     this.bpm = e.target.value;
-    clearInterval(this.isPlaying);
-    this.isPlaying = null;
+    clearInterval(this.playing);
+    this.playing = null;
     const playBtn = document.querySelector(".play");
-    if (playBtn.classList.contains("active")) {
+    if (playBtn.classList.contains("--active")) {
       this.start();
     }
   }
