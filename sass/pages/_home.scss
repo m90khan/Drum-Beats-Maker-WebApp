@@ -1,0 +1,168 @@
+.container {
+  border: 0.5rem solid $color-grey-dark;
+}
+.header {
+  @include flex(row, center, center);
+  min-height: 20vh;
+  background: linear-gradient($color-primary-light, $color-primary);
+  color: $color-grey-dark-1;
+  h2 {
+    font-weight: 900;
+  }
+}
+
+.section-main {
+  min-height: 80vh;
+  @include flex(column, center, center);
+}
+
+.snare-track,
+.kick-track,
+.hihat-track {
+  @include flex(row, space-evenly, center);
+  padding: 2rem;
+  flex: 0 0 100%;
+  max-width: 90%;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.controls {
+  @include flex(row, space-evenly, center);
+  flex: 0 0 25rem;
+  // h1 {
+  //   justify-self: flex-start;
+  //   font-weight: 700;
+  //   flex: 0 0 15rem;
+  // }
+  .mute {
+    color: $color-grey-dark-1;
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-radius: 5rem;
+    &.--active {
+      color: $color-primary;
+      background-color: $color-black;
+    }
+  }
+  select {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+  }
+}
+
+.hihat,
+.snare,
+.kick {
+  @include flex(row, center, center);
+  flex: 1 1 40rem;
+  flex-wrap: wrap;
+}
+
+.pad {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.kick-pad,
+.hihat-pad,
+.snare-pad {
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 5rem;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.kick-pad {
+  background: $color-secondary-light;
+  &.--active {
+    background: $color-secondary;
+  }
+}
+.snare-pad {
+  background: $color-primary-light;
+  &.--active {
+    background: $color-primary-dark;
+  }
+}
+.hihat-pad {
+  background: $color-grey-dark-3;
+  &.--active {
+    background: $color-grey-dark-1;
+  }
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+.title {
+  @include flex(row, space-evenly, center);
+  padding: 4rem 5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 5rem;
+  height: 4rem;
+  border: 0.3rem $color-grey-dark solid;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  &--kick {
+    background-image: url("../../img/kick.png");
+    h1 {
+      color: $color-secondary;
+      opacity: 1;
+    }
+  }
+  &--snare {
+    background-image: url("../../img/snare.png");
+    h1 {
+      color: $color-primary;
+    }
+  }
+  &--hihat {
+    background-image: url("../../img/hihat.png");
+    h1 {
+      color: $color-grey-dark-1;
+    }
+  }
+  h1 {
+    font-weight: 900;
+  }
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+
+.tempo {
+  text-align: center;
+  @include flex(row, center, center);
+  width: 100%;
+  *:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 30%;
+  position: relative;
+  background: rgb(88, 88, 88);
+  cursor: pointer;
+  border-radius: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.tempo-nr {
+  color: $color-primary;
+}
