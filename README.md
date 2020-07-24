@@ -6,6 +6,7 @@
 
   <h3 align="center">BeatMakerX---Drum Beats Generator</h3>
 
+<<<<<<< HEAD
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
@@ -86,3 +87,6 @@ Reach out to me at one of the following places!
 - Linkedin at <a href="https://de.linkedin.com/in/khanmohsinx" target="_blank">`@khanmohsinx`</a>
 
 ---
+=======
+<img src="img/overview.jpg">
+>>>>>>> 464fe26f00dd0c2981d6e826badf6232cdf6a122
