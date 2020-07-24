@@ -82,6 +82,7 @@ class Drums {
   soundChange(e) {
     const selectName = e.target.name;
     const selectValue = e.target.value;
+    console.log(selectName);
     switch (selectName) {
       case "kick-select":
         this.kickAudio.src = selectValue;
@@ -133,6 +134,7 @@ class Drums {
   tempoChange(e) {
     const tempoValue = document.querySelector(".tempo-nr");
     let targetValue = e.target.value;
+
     tempoValue.innerText = targetValue;
   }
   tempoUpdate(e) {
@@ -147,6 +149,8 @@ class Drums {
 }
 
 const drum = new Drums();
+
+//Event Listeners
 
 // when play is click : loop over each pad from b0-b9
 drum.playBtn.addEventListener("click", function () {
