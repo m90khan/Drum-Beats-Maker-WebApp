@@ -7,8 +7,7 @@
   <h3 align="center">BeatMakerX---Drum Beats Generator</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
+Play simple drum beats on a loop    <br />
     <a href="emailto:m90khan@gmail.com"><strong>Contact Me »</strong></a>
     <br />
     <br />
