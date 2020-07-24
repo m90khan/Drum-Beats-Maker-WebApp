@@ -12,30 +12,24 @@ Play simple drum beats on a loop    <br />
     <br />
     <br />
     <a href="https://m90khan.github.io/Drum-Beats-Maker-WebApp/.">View Demo</a>
-    ·
-     ·
+    
    </p>
 </p>
 
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+- [Process](#process)
 - [Skills](#skills)
-- [Overview](#getting-started)
 - [Code Snippet](#code)
 - [Contact](#Contact)
+
+---
 
 ### About the Project
 
 Live: https://m90khan.github.io/ChuckSum---Lorem-Ipsum-Generator/
 <img src="./img/overview.jpg">
-
-### Skills
-
-- HTML5
-- CSS3 - SCSS Syntax
-- JavaScript
-- Photoshop
 
 ##### Process
 
@@ -45,6 +39,17 @@ Live: https://m90khan.github.io/ChuckSum---Lorem-Ipsum-Generator/
 - If --active, play the sound based on specific class for each sound
 - data-\* attribute used for mute/unmute the sounds
 - Change the tempo of the sounds based on the tempo slider.
+
+---
+
+### Skills
+
+- HTML5
+- CSS3 - SCSS Syntax
+- JavaScript
+- Photoshop
+
+---
 
 ### Code Snippet
 
