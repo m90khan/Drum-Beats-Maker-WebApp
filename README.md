@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://www.thewebsitekitchen.com">
-    <img src="img/favicon.png" alt="Logo" width="120" height="120">
+    <img src="img/kick.png" alt="Logo" width="120" height="120">   <img src="img/hihat.png" alt="Logo" width="120" height="120">   <img src="img/snare.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">BeatMakerX---Drum Beats Generator</h3>
