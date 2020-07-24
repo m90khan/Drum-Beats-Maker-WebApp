@@ -30,7 +30,7 @@ class Drums {
     const activeBars = document.querySelectorAll(`.b${step}`);
     //loops over bars
     activeBars.forEach((bar) => {
-      bar.style.animation = `playTrack .3s alternate  ease-in-out`;
+      bar.style.animation = `playTrack .3s alternate  ease-in-out 2`;
       if (bar.classList.contains("--active")) {
         if (bar.classList.contains("kick-pad")) {
           this.kickAudio.currentTime = 0;

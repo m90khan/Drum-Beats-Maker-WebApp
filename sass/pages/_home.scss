@@ -104,7 +104,7 @@ img {
   background-position: center center;
   width: 5rem;
   height: 4rem;
-  border: 0.3rem $color-grey-dark solid;
+  border-right: 0.1rem $color-grey-dark solid;
   border-radius: 0.5rem;
   margin-right: 1rem;
   &--kick {
@@ -159,6 +159,15 @@ img {
   border-radius: 1rem;
   &:focus {
     outline: none;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5rem;
+    background: $color-primary;
+    cursor: pointer;
   }
 }
 
